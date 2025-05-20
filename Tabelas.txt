@@ -1,0 +1,40 @@
+-Hierarquia de Tabelas(simples)
+  No HTML é possível criar tabelas para tal usa-se a tag 'Table' e ela tem as seguintes sub-tags:
+-Table row-é o conteúdo de uma linha
+-Table Header-é um titulo para a tabela
+-Table Data-O conteúdo de cada linha de uma coluna.
+ As tabelas normalmente no excel por exemplo, por padrão, não apresenta as bordas das linhas e colunas, para que apresente elas temos que permitir que ela apresente, o mesmo acontece no html e para tal usamos as css's para colocar as dispersão de linhas, porque sem ela a tabela será apenas um amolgado de letras, formados apenas como uma tabela mas não exatamente de forma visual para todos.
+
+-Alinhamento de conteúdo de tabelas
+  Aqui também é possível alinhar o conteúdo das tabelas, para tal usa-se ou o 'text align' para alinhamento horizontal e o 'vertical-align' para alinhamento vertical.   
+
+-Anatomia de tabelas grandes
+  Table
+    Caption
+    THead
+      TR,TD,TH
+    TBODY
+       TR, TD,TH
+    TFOOT
+       TR, TD, TH
+-Efeito zebrado na tabela
+ Aqui é possível deixar a tabela com efeito zebrado, que é aquela que deixa a tabela com diferenças de cores tal e qual como uma zebra, mas ela não se aplica apenas ao preto e branco, também á diversas cores.
+ Para tal usa-se a pseudoclasse 'nth-child()' e dentro de parênteses tem as seguintes funções:
+-2n que conta uma linha sim e outra não
+-odd- para colunas pares
+-even-para colunas impares 
+
+-Cabeçalho fixo
+ É possível também deixar o cabeçalho fixo de forma que em caso rolemos a pagina ele continue lá, para tal tem que se deixar a table com position relative e o thead>tr>th com position sticky e o top -1px.
+ Porém elá não funciona em todos navegadores por isso não é tão eficaz.  
+
+-Mesclagem de tabelas
+  É possível expandir uma células em células vazias, em que na qual usamos dentro das tags 'td' o colspan(que é o preenchimento em colunas) e o rowspan(que é o preenchimento em linha)
+
+-Agrupar Colunas com Colgroup
+ É possível nós destacarmos colunas, para tal usamos a tag colgroup e dentro dela a tag col de acordo ao números de colunas da tabela.
+
+ Também é possível selecionar 3 colunas com a mesma configuração, para tal usamos o span depois da class e depois dele selecionamos o quantas colunas terão a mesma configuração.
+
+-Responsividade de tabelas
+  Para deixar as tabelas responsivas é só colocar-mos uma div e na css colocar o 'overflow-x:auto'. 

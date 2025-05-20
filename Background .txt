@@ -1,0 +1,30 @@
+ Num site dá pra por a imagem como fundo, isto usando o background-image:url(o destino/nome da imagem.jpg/png).
+
+-Repetição de imagens
+
+ Também dentro do background-image pode se por uma url de um site externo, porém ela faz com que o browser repita a imagem, para parar com isso usamos o background repeat
+
+-Posição de imagens
+
+ Nós podemos posicionar imagens num site, usando o background-position.
+
+-Mudando tamanho da imagem de fundo do site
+
+ Quando pusemos uma imagem no site principalmente se for um amador, ele vai colocar a imagem porém a cor do background do  body vai permanecer lá a imagem não vai preencher o documento inteiro. Para evitar isso, usa-se o background-size em que na qual nela contém as certas descrições:
+-Contain: esta vai preencher o documento quase inteiro e vai deixar a cor padrão do background do body, e também influencia na adaptação em certos dispositivos deixando ele mais achatado.
+-Cover: esta vai preencher o documento no seu todo sem deixar a cor padrão do background do body, e outros dispositivos vão se adaptar facilmente.
+-Dimensões em % e px: esta tal com o contain não preenche o documento no seu todo e nem é adaptável.
+
+-Background-attachment e shorthand
+ Sempre que pusemos um conteúdo ela tem a tendência de se adaptar de acordo ao site. Porém, ao adicionarmos uma imagem e colocarmos um conteúdo enorme, ele vai fazer com que a imagem se repita para que ele se adapte.
+ Para evitar isso usamos o background-attachment que é um método de afixar a imagem de modo que se adapte com o conteúdo.
+
+ Os background também têm uma forma shorthand/simplificação, que na qual  escrevemos background apenas dentro dela tem a seguinte sequência:color -> image -> position  -> repeat -> attachment.
+ Obs: O size não está aí porque ele não funciona no shorthand, ele é um single-handed
+
+-Centralização vertical de caixas
+ Qualquer container contém o seu conteúdo, e nela sempre temos que centralizar de modo que deixe o site mais estético e melhor compreensível.
+ Para tal usamos o método de caixas principalmente o "section" e o "article".
+ Daí dentro a section será o container e o article o conteúdo.
+ Dentro do container temos o position que é sempre relativo,o width e o height.
+ Dentro do conteúdo temos o position também porém este é absoluto  também o height e o width, mas adicionando as dimensões top e left que é sempre 50% as duas e o transform com o translate/translação. 

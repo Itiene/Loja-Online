@@ -1,0 +1,79 @@
+  Um site sempre tem formulários, seja ele pra cadastrar para uma rede social ou qualquer outra rede comercial, como também para preencher pra realizar uma determinada pesquisa.
+
+ Para colocar formulários começamos com a tag e abertura e fechamento 'form', e dentro dela temos vários inputs como por exemplo, o input:text(para cadastrar qualquer tipo de informação textual) e este é posto sempre dentro do paragrafo da descrição o input:submit(para enviar para o servidor(linguagem de programação)) e nas duas tem sempre um name que é pra html e php e o id que é para html e javascript.
+
+Obs: Caso queiramos tirar o cadastro automático usamos dentro da tag de abertura form o 'autocomplete' que tanto pode ser ligado ou desligado com o 'on' e 'off'.
+
+ Para mandar o formulário para o servidor usamos o 'action' dentro do 'form' e depois colocamos o arquivo da linguagem de programação que usamos.
+
+-Label
+ As labels são aquelas que são usadas para acessibilidade em diversos dispositivos principalmente os tácteis. 
+ Eles são sempre postos entre a descrição, por exemplo: <label for="">Nome</label>. Você viu que dentro da label tem um 'for' neste 'for' põe-se o id do input.
+
+-GET e POST
+ O get e o post são técnicas usadas para proteger ou não dados.
+ Para tal dentro do form usamos o method.
+ O GET e POST têm uma diferença no seu uso, o get é usado para deixar os dados como nome sobrenome, profissão, o post evita que estes dados sejam divulgados, embora ele esteja visível no header do servidor.
+
+ O GET usa uma limitição de 3000 bytes letras, e ele é usada apenas em cadastros textuais que não requerem algo a mais de 3000 letras, como senhas, identificações etc.
+
+ O Post ao contrário do Get pode ultrapassar das 3000 letras ou bytes, e usado para senhas, identificações e por aí vai.
+
+-Caixas de texto e de senha
+ Tal como usamos o input:text para preenchimento textual, também usamos para senhas.
+ 
+ Outra coisas sobre essas caixas é que podemos usar o required, para dizer que aquele campo é obrigatório preencher. Também temos o minlength e o maxlength que é usado para indicar o mínimo e o máximo de caracteres. Isso tudo é usado dentro dos inputs.
+ 
+ O autocomplete tal como é usado dentro do form também usa-se dentro dos inputs em que na qual ele pode preencher automaticamente senhas, nomes entre outras coisas.
+
+ O placeholder é uma marca de água de descrição breve do que se vai se preencher aí.
+
+-Number, month, date e time 
+ Para além das caixas de texto e senha, também podemos pôr número,mês, data e horário.
+ 
+ No caso dos números é o 'input:number' que também tem os inline min e max que serve para colocar os números que terão na barra de pesquisa ou digitando e o value e o step que é para indicar caso haja números com virgula.
+
+ O mês é o 'input:month' que apenas tem o inline 'value' que é pra colocar onde ele vai iniciar, e este input só mostra o mês e o ano.
+
+ A data é o 'input:date' que diferente do month ela mostra o data inteira e ela também usa o value.
+
+ O horário é o 'input-time' e ela também usa o value.
+
+-Compatibilidade dos formulários
+ Os formulários podem causar incompatibilidade em certos navegadores ou dispositivos, por isso há sempre que ter vários navegador e verificar ou ter alguém que possa verificar em caso de dispositivos diferentes.
+
+-Telefone e email
+ O telefone e e-mail também são exemplos de formulários, cada uma com um input diferente.
+
+ O telefone é o input:tel e ela têm também uma inline que é o 'pattern' que dá o padrão do cadastro telefónico.
+
+O e-mail é o 'input-email'.
+
+-Color, Range e file
+ O color, range e o file também são formulários.
+
+ O color é o 'input:color' e ela permite escolher a cor apartir de uma paleta e ela usa value também porém deve-se usar o método hexadecimal.
+
+ O range é o 'input:range' e ela permite selecionar o nível de qualquer coisa como: avaliações de site, notas etc.
+
+ O file é o 'input:range' e ela permite selecionar um ficheiro qualquer seja foto, documento,video entre outros.
+
+-Select, datalist e textarea
+ O select é aquele que é usado para deixar uma lista pronta para o utilizador de um determinado assunto.
+
+ O datalist é aquele que é usado para deixar uma lista pronta e permitir que o utilizador adicione mais coisas.
+
+ O textarea é aquele que é usado para permitir que o usuário escreva uma mensagem seja de avaliação, descrição de alguma coisa ou mesmo reclamação.
+
+ O select e o datalist tem uma diferença que é, o select apenas apresenta coisas adicionadas pelo desenvolvedor ela não permite adicionar nada. Já o datalist permite.
+
+ No select existe o optgroup que permite organizar a lista de acordo ao que ela representa.
+
+ O datalist normalmente é seguido do input:text e ele tem um value.
+
+ O textarea é seguido por um campo de coluna e linha que põe a secção num tamanho adequado ao site.
+
+-Output
+ O <output></output> se trata de um elemento de saída, utilizado somente para fins de exibição. É um elemento no qual um processo programado pode injetar os resultados de um cálculo ou o resultado de uma ação do usuário por exemplo.
+
+ Por ser um elemento de saída, isso significa que: Quando utilizado, a tag de formulário output deve estar associada a um script. O resultado gerado por esse script, como um número por exemplo, deve ser renderizado no elemento output.

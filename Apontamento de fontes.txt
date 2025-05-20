@@ -1,0 +1,11 @@
+Fontes do Google
+Para tirar uma fonte do Google é só ir ao fonts.google.com escolher uma fonte e nessa fonte ir em "Get font" depois "embeed code" depois em importar e selecionar o código e inserir no código fonte do seu compilador
+Fontes externas
+Para tirar fontes externas é só ir ao dafont.com, selecionar a fonte, baixar, descompactar, na colocar na pasta do projeto, e dentro do código digitar "@font-face",e dentro deste código terá a font-family:que é o nome escolhido pelo usuário da fonte e a url onde vamos por o endereço do arquivo do fonte escolhida e na mesma linha pusemos o format() que tem os seguintes endereços:
+Tipos de format()
+            -opentype(otf)
+            -truetype(ttf)
+            -embedded-opentype
+            -truetype-aat(Apple Advanced Typography)
+            -svg
+todos esses com o ('').
