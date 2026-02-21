@@ -1,0 +1,41 @@
+Grid Layout é um sistema de layout baseado em uma grande bidimensional e otimizado para design de interfaces de usuário.Nesse modelo de grade, os elementos-filhos do conteiner que defina a grade podem ser posicionados livremente em espaços criados na estrutura que ela tenha sido definida com suas dimensões flexíveis ou fixas.
+Ou seja ela permite alinhar o conteudo em determinadas aréas na sua respectiva grade.
+
+-Anatomia de um Grid
+O Grid layout é composto por:
+Grid container:que é a área que compõe as grades;
+Grid item:que é uma unica grade desse container;
+Grid track:que a area que delimitada a grade seja ela horizontal ou vertical;
+Row track: que é a area delimitada da grade na horizontal;
+Column track:que é a area delimitada da grade na vertical;
+Grid lines:que são as linhas que formam as grades sejam elas horizontais ou verticais; 
+Grid area:que é um certo conjunto de grades;
+
+-Propriedades de container para Grids
+As propriedades de um container são:
+Display:usado para criar um grid container usando(display:grid) no css;
+Grid-template-columns:usado para reposicionar as grades formando uma coluna;
+Grid-template-rows:usado para redimensionar as linhas das grades de acordo a dimensão desejada;
+Gap:usado para redimensionar o conteudo da grade de acordo a dimensão desejada;
+Align-items:é usado para alinhar o item da grade de forma vertical.Nela temos as seguintes propriedades:strecth(que encaixa o item na grade),start(que encaixa o item na parte de cima da grade),center(que coloca o item no centro da grade) e o end(que coloca o item no fim da grade);
+Justify-items:é usado para alinhar o item da grade de forma horizontal.Nela temos as seguintes propriedades:strecth(que encaixa o item na grade),start(que encaixa o item na esquerda da grade),center(que coloca o item no centro da grade fazendo isso de forma horizontal) e o end(que coloca o item na direita da grade);
+Align-content:é usado para alinhar o conteudo do container de forma vertical.Nela temos as seguintes propriedades:start(que encaixa o conteudo na parte de cima do container),center(que coloca o conteudo no centro do container fazendo isso de forma vertical) e o end(que coloca o conteudo na parte de baixo do container),space-between(que coloca o conteudo, de um determinado conjunto de itens, separados),space-evenly(que coloca o conteudo de um determinado conjunto de itens,separados tanto do container quanto dos proprios itens de modo que haja uma separação igual),space-around(que coloca o conteudo de um determinado conjunto de itens,separados tanto do container quanto dos proprios itens de modo que haja uma separação igual porém entre conteudos o espaço é feito em dobro),stretch(encaixa o conteudo no container);
+Justify-content:é usado para alinhar o conteudo do container de forma horizontal.Nela temos as seguintes propriedades:start(que encaixa o conteudo na esquerda do container),center(que coloca o conteudo no centro do container fazendo isso de forma horizontal) e o end(que coloca o conteudo na direita do container),space-between(que coloca o conteudo, de um determinado conjunto de itens, separados porém uns irão a esquerda outros no centro e outros na direita),space-evenly(que coloca o conteudo de um determinado conjunto de itens,separados tanto do container quanto dos proprios itens de modo que haja uma separação igual e isso feito também de forma horizontal),space-around(que coloca o conteudo de um determinado conjunto de itens,separados tanto do container quanto dos proprios itens de modo que haja uma separação igual porém entre conteudos o espaço é feito em dobro isso feito também de forma horizontal),stretch(encaixa o conteudo no container);
+Grid auto-row:é usada para redimensionar um item adicionado no container nas linhas;
+Grid auto-column:é usada para redimensionar um item adicionado no container nas colunas;
+Place-items:que simplifica os align e justify items. E essa é realmente a ordem de propriedades dela.
+Place-content:que simplifica os align e justify content. E essa é realmente a ordem de propriedades dela.
+Grid-template:que simplifica os template-rows e columns. E essa é realmente a ordem de propriedades dela porém adicionando uma '/'.
+Função repeat():usado para colocar a quantidade de vezes que uma determinada dimensão precisa ser repetida.Usando da seguinte forma:repeat(a quantidade de repetições,a dimensão)
+Unidade fraction:é usada para num container com uma determinada dimensão fraccionar por partes iguais ou não.Ela é medida com o valor(fr).
+
+-Propriedades de itens para Grids
+As propriedades dos itens são:
+-Grid-row-start:que indica a linha principal que o sistema vai se basear no ajustamento de janelas.
+-Grid-row-end:que indica a linha final que o sistema vai se basear até onde vai o ajustamento de janelas.
+-Grid-column-start:que indica a coluna principal que o sistema vai se basear no ajustamento de janelas.
+-Grid-column-end:que indica a coluna final que o sistema vai se basear até onde vai o ajustamento de janelas. 
+-span:que indica quantas linhas ela se expandiu. 
+-grid-row:que é uma forma simplificada do grid-row-start e do end.
+-grid-column::que é uma forma simplificada do grid-column-start e end. 
+-grid-area:que uma simplificação maior do grid-column e do grid-row

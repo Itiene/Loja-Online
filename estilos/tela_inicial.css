@@ -10,12 +10,17 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-    background-color: wheat;
 }
 
-#cabecalho{
-    text-align: right;
-    color: wheat;
+div#cabecalho{
+    display: flex;
+    margin: 5px;
+    padding: 10px 10px 0px 0px;
+}
+
+nav#links{
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 main{

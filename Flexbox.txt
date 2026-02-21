@@ -1,0 +1,121 @@
+ São aquelas usadas para criar adaptação de um container com o conteúdo, com o dispositivo, de modo que não haja nenhuma quebra.
+
+ Normalmente elas usam as técnicas de css "display:flex"(para o conteúdo) e o "flex-auto"(para os itens/conteúdo), para que haja uma fácil adaptação.
+
+ As flexboxs para a sua adaptação elas dependem de um container, que também é chamado de pai, pois é ele quem determina como será feita a adaptação do conteúdo com o dispositivo.
+
+                    Containers
+
+-Direções e Eixos Flexbox
+*Direções:as direções são aquelas em determinam como a caixa vai se adaptar.
+ Nelas temos as seguintes direções:
+1-'flex-direction:row': é aquela em que a adaptação é feita horizontalmente da esquerda para direita.
+
+2-'flex-direction:row-reverse': é aquela em que a adaptação também é feita horizontalmente porém da direita para a esquerda.
+
+3-'flex-direction:column': é aquela em que a adaptaçãp é feita verticalmente,exatamente um coluna(normalmente usada para telefones) e a adaptação é feita de cima para baixo.
+
+4-'flex-direction-column-reverse': ao contario da column a adaptação é feita de baixo para cima. 
+
+*Eixos: os eixos são os extremos da caixa flexível.
+
+Ela divide-se em: cross axis e main axis.
+
+*Cross-Axis*
+ O cross axis para o 'flex-direction:row' é o comprimento da caixa na parte esquerda em que o eixo de cima é o 'cross-axis start' e o de baixo é o 'cross-axis end'.
+
+ O cross axis para o 'flex-direction:row-reverse' é o comprimento da caixa na parte direita em que o eixo de cima é o 'cross-axis start' e o de baixo é o 'cross-axis end'.
+
+ O cross axis para o 'flex-direction:column' é a largura da caixa em que o eixo de esquerdo é o 'cross-axis start' e o de direito é o 'cross-axis end'.
+
+ O cross axis para o 'flex-direction:column' é a largura da caixa em que o eixo de direito é o 'cross-axis start' e o de esquerdo é o 'cross-axis end'.
+
+*Main-Axis*
+O main-axis para o 'flex-direction:row' é a largura da caixa em que o eixo esquerdo é o 'main-axis start' e o de direito é o 'main-axis end'.
+
+O main-axis para o 'flex-direction:row-reverse' é a largura da caixa em que o eixo direito é o 'main-axis start' e o de esquerdo é o 'main-axis end'.
+
+O main-axis para o 'flex-direction:column' é o comprimento da caixa na parte esquerda em que o eixo de cima é o 'main-axis start' e o de baixo é o 'main-axis end'.
+
+O main axis para o 'flex-direction:column-reverse' é o comprimento da caixa na parte esquerda em que o eixo de baixo é o 'main-axis start' e o de cima é o 'main-axis end'.
+
+(Para o caso de dúvida vá em imagens na pasta flexbox)
+
+-Empacotamento e fluxo no Flexbox
+ É aquela em que mostra como será o modo de adaptação, se ela empacota ou não, e ela leva o nome em inglês de 'wrap'.
+
+Ele tem os seguintes empacotamentos:
+1-'Flex-wrap:nowrap': este diz ao navegador que não precisa de empacotar, o que implica dizer que conforme o dispositivo o flex-item(conteúdo) vai encolhendo, e nem sempre ela adapta porque depende do conteúdo.
+
+2-'Flex-wrap:wrap': este diz ao navegador que vai empacotar, o que implica dizer que conforme o dispositivo ela quebra o ultimo conteúdo e passa para outra linha de modo a ter uma melhor visualização. Porém ele depende da direção(flex-direction).
+
+3-'Flex-wrap:wrap-reverse':faz o mesmo que o wrap porém em vez de quebrar o ultimo quebra o 1º e manda para cima.
+
+Nota: Tem como simplificar o flex-direction e o flex-wrap colocando o flex-flow que também é uma técnica shorthand.
+
+-Alinhamento nos eixos Flexbox
+ Tal como qualquer outro conteúdo, precisa haver um alinhamento para melhor organização de site e por aí vai, e para esse alinhamento no caso das flexbox é usado o 'justify-content' que ajuda no alinhamento de um conteúdo numa caixa e usado apenas no eixo principal, para o transversal usamos o 'align-items'.
+
+ O justify-content é subdividido pelas seguintes atribuições:
+flex+flow:row
+-'justify-content:flex-start':Este aqui alinha o conteúdo da seguinte forma:ela coloca o conteúdo no início e deixa o espaço em branco do jeito que está.
+-'justify-content:flex-end':Este aqui alinha o conteúdo no fim deixando o espaço em branco no inicio do eixo principal(main-start).
+-'justify-content:center':Este aqui alinha o conteúdo no centro, deixando dois espaços em branco de dimensão igual.
+-'justify-content:space-between':Este aqui alinha o conteúdo de modo que haja um espaço entre eles.
+-'justify-content:space-evenly':Este aqui deixa tanto o eixo principal e o final com espaço,quanto entre os conteúdos.
+-justify-content:space-around':Este aqui cria blocos e dentro desses blocos ele centraliza o conteúdo.
+
+flex-flow:column
+-'justify-content:flex-start':Este aqui alinha o conteúdo da seguinte forma:ela coloca o conteúdo no início e deixa o espaço em branco do jeito que está.
+
+-'justify-content:flex-end':Este aqui alinha o conteúdo em baixo deixando o espaço em branco no inicio do eixo principal(main-start).
+-'justify-content:center':Este aqui alinha o conteúdo no centro, deixando os espaços de cima e em baixo em branco de dimensão igual.
+-'justify-content:space-between':Este aqui alinha o conteúdo de modo que haja um espaço entre eles.
+-'justify-content:space-evenly':Este aqui deixa tanto o eixo principal e o final com espaço,quanto entre os conteúdos.
+-justify-content:space-around':Este aqui cria blocos e dentro desses blocos ele centraliza o conteúdo.
+
+                        Itens
+
+O align-items é subdividido pelas seguintes atribuições:
+-'align-items:stretch':é aquele em que o conteúdo,com aumento de tamanho da caixa, coincide com o tamanho dessa mesma caixa.
+
+-'align-items:flex-start':ela alinha o conteúdo em cima deixando a parte de baixo com espaço.
+-'align-items:flex-end':ela alinha o conteúdo em baixo deixando a parte de cima com espaço.
+-'align-items:center':alinha o conteúdo no centro deixando a parte de cima e de baixo com espaços iguais.
+
+-Alinhamento de elementos empacotados no Flexbox
+ Para realizar o empacotamento do conteúdo usa-se o 'align-content' e ela se classifica por:
+
+-'align-content:stretch'
+-'align-content:flex-start'
+-'align-content:flex-end'
+-'align-content:center' 
+-'align-content:space-between'
+-'align-content:space-evenly'
+-'align-content:space-around'
+
+*Explicação nas imagens dentro da pasta*
+
+-Alinhamento dos itens Flexbox
+Tal como os containers(pai) também temos como configurar os itens e neles temos as seguintes configurações:
+
+-'order': é aquele usado para ordenar o conteúdo(itens)
+
+-'align-self':é aquele usado para saber o estado do conteúdo.
+
+-Propriedade flex-basis em Flexbox
+  A propriedade 'flex-basis' é usada para 
+determinar o tamanho do item de acordo ao conteúdo e ela segue com a atribuição 'auto' ou qualquer dimensão em pixeis, porém a dimensão em pixeis so funciona bem com o flex-flow nowrap com o wrap não funciona tão bem.
+
+-Controle do tamanho de itens flexíveis
+  Tem como aumentar o tamanho ou diminuir 
+dos itens, para isso usamos o 'flex-grow' e 'flex-shrink', e eles começam com 0 e 1 respectivamente'. Porém não é só com 0 e 1 também podemos usar de 2 em diante, pois eles aumentam o dobro.
+
+ Tem também como realizar o aumento e 
+diminuição dos itens individualmente colocando ids ou class's em cada uma e depois é só configurar com as propriedades 'flex-shrink e flex-grow'.
+
+-Shorthand Flex
+ Também é possível realizar uma técnica de simplificação ao invês de usar(flex-basis, flex-shrink e flex-grow), para tal usamos apenas flex que segue a seguinte ordem:
+
+ flex:'grow' 'shrink' 'basis';
+
