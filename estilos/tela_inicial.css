@@ -12,20 +12,65 @@ body{
     text-align: justify;
 }
 
-div#cabecalho{
+header{
+    background-color: gray;
+    padding: 10px;
     display: flex;
-    margin: 5px;
-    padding: 10px 10px 0px 0px;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0px;
+    z-index: 1;
 }
 
 nav#links{
-    align-items: flex-end;
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+nav#links ul{
+    list-style: none;
+    display: flex;
+    gap:10px
+}
+
+nav#links a{
+    text-decoration: none;
+    color: white;
+}
+
+nav#links a:hover{
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(177, 177, 194);
+    transition: 1ms;
 }
 
 main{
-    height: 400px;
+    position: relative;
+    margin: 10px;
+    background-color: aquamarine;
 }
-h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+footer{
+    background-color: gray;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    z-index: 1;
+}
+
+footer ul{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+}
+
+ul a:hover{
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(177, 177, 194);
+    transition: 1ms;
 }

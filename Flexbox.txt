@@ -13,7 +13,7 @@
 
 2-'flex-direction:row-reverse': é aquela em que a adaptação também é feita horizontalmente porém da direita para a esquerda.
 
-3-'flex-direction:column': é aquela em que a adaptaçãp é feita verticalmente,exatamente um coluna(normalmente usada para telefones) e a adaptação é feita de cima para baixo.
+3-'flex-direction:column': é aquela em que a adaptação é feita verticalmente,exatamente um coluna(normalmente usada para telefones) e a adaptação é feita de cima para baixo.
 
 4-'flex-direction-column-reverse': ao contario da column a adaptação é feita de baixo para cima. 
 
