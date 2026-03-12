@@ -16,10 +16,11 @@ h1{
 }
 
 div#cadastro{
-    text-decoration: dashed;
+    display: block;
     display: grid;
     margin: 10px 10px 10px;
     border-radius: 10px;
+    padding: 10px;
     text-align: justify;
 }
 
