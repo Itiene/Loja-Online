@@ -10,7 +10,7 @@
 
 -Mudando tamanho da imagem de fundo do site
 
- Quando pusemos uma imagem no site principalmente se for um amador, ele vai colocar a imagem porém a cor do background do  body vai permanecer lá a imagem não vai preencher o documento inteiro. Para evitar isso, usa-se o background-size em que na qual nela contém as certas descrições:
+ Quando colocamos uma imagem no site principalmente se for um amador, ele vai colocar a imagem porém a cor do background do  body vai permanecer e a imagem não vai preencher o documento inteiro. Para evitar isso, usa-se o background-size em que na qual nela contém as certas descrições:
 -Contain: esta vai preencher o documento quase inteiro e vai deixar a cor padrão do background do body, e também influencia na adaptação em certos dispositivos deixando ele mais achatado.
 -Cover: esta vai preencher o documento no seu todo sem deixar a cor padrão do background do body, e outros dispositivos vão se adaptar facilmente.
 -Dimensões em % e px: esta tal com o contain não preenche o documento no seu todo e nem é adaptável.
