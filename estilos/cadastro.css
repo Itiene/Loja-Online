@@ -6,29 +6,76 @@
 }
 
 body{
-    background-color: aliceblue;
-    text-align: justify;
+   background: linear-gradient(45deg,#607ec5,#cddbf7); 
 }
 
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+}
 h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div{
-    display: block;
+div#cadastro{
     display: grid;
-    margin: 10px 10px 10px;
+    gap: 20px;
+    padding: 20px;
     border-radius: 10px;
-    padding: 10px;
-    text-align: justify;
+    background-color: hsla(52, 8%, 62%, 0.589);
+    box-shadow: 0px 0px 10px rgba(7, 7, 7, 0.45);
 }
 
 div#cadastro form{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    top: 10px;
-    bottom: 10px;
+    justify-content: center;
+    align-content: center;
 }
 
+
+div#cadastro form>label{
+    text-align: start;
+}
+
+div#cadastro form>input{
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+div#cadastro form>button{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    width: 100px;
+    align-self: center;
+    transition: 0.3s;
+}
+
+div#cadastro form > button:hover{
+    background-color: #333;
+}
+
+div#cadastro form a{
+    text-decoration: none;
+}
+
+div#verificacao form p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+}

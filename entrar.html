@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/cadastro.css">
     <title>Entrar</title>
 </head>
 <body>
-    <h1>Conta</h1>
-    <form action="">
-        <label>Nome de usuário:</label>
-        <input type="text" id="user" placeholder="ex:itieneguilherme" required><br>
-        <label>Palavra-passe:</label>
-        <input type="password" id="password" minlength="8" maxlength="10" required placeholder="**********">
-
-        <p><input type="checkbox" id="checkbox" checked>Aceito os termos e condições</p>
-        <a href="#">Esqueceu da palavra-passe?</a><br>
-        <button id="btn_entrar">Pronto</button>
+    <main>
+        <section>
+            <div id="cadastro">
+                    <h1>Login</h1>
+                    <form action="">
+                        <label>Nome de usuário:</label>
+                        <input type="text" id="user" placeholder="ex:itieneguilherme" required>
+                        <label>Palavra-passe:</label>
+                        <input type="password" id="password" minlength="8" maxlength="10" required placeholder="**********">
+                        <div id="verificacao">
+                            <p><input type="checkbox" id="checkbox">Remember me</p>
+                            <p><a href="#">Esqueceu a Senha?</a></p>
+                        </div>
+                        <button id="btn_entrar">Entrar</button>
+                        <p>Não tem uma conta?<a href="cadastro.html">Cadastrar-se</a></p>
+                    </form>
+            </div>
+        </section>
+    </main>
+    
 </body>
 </html>
