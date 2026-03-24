@@ -32,7 +32,8 @@ div#cadastro{
     gap: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: hsla(52, 8%, 62%, 0.589);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px rgba(7, 7, 7, 0.45);
 }
 

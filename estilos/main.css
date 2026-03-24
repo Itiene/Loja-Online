@@ -1,0 +1,14 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: aquamarine;
+}
+
+header i{
+    color: black;
+}
