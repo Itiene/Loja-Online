@@ -13,7 +13,7 @@ body{
 header{
     background-color: darkgray;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
     padding: 10px;
 
@@ -22,12 +22,12 @@ header{
     z-index: 10;
 }
 
+header>button#menu{
+    padding: 10px;
+}
+
 nav#cabecalho{
     display: flex;
-    /*
-    flex-direction: row;
-    justify-content: flex-end;
-    */
     align-items: center;
 
 }
@@ -38,10 +38,16 @@ nav#cabecalho ul{
     gap: 20px;
 }
 
+ul form>input{
+    border-radius: 10px;
+    padding: 4px;
+}
+
 nav#cabecalho a{
     color: white;
     text-decoration: none;
     margin-right: 15px;
+    padding: 10px;
 }
 
 nav#cabecalho a:hover{
@@ -52,11 +58,11 @@ nav#cabecalho a:hover{
 main{
     background-color:white;
     font-family: "Montserrat", sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 section#foto-inicio{
-    color: rgba(255, 255, 255, 0.295);
+    color: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +70,6 @@ section#foto-inicio{
 
 section#foto-inicio{
     background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/imagem.jpg) no-repeat;
-    
     background-size: cover;
     background-position: center;
     height: 89vh;
@@ -81,18 +86,49 @@ article#descricao{
 }
 
 section#categorias{
-    background-color: aquamarine;
     display: flex;
     flex-direction: row;
-    align-content: space-between;
-    justify-content: space-between;
+    align-items: space-evenly;
+    justify-content: space-evenly;
 }
 
 section#categorias article{
-    border: dotted blue;
     border-radius: 10px;
-    padding: 10px;
+    padding: 80px 200px 80px 200px;
+    cursor: pointer;
     
+    transition: transform 1s ease,box-shadow 0.3s;
+}
+
+section#categorias article:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}  
+
+article#cat-homem{
+    background: url(../imagens/pexels-alexandro-david-871783-1808492.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+  
+
+article#cat-mulher{
+    background: url(../imagens/pexels-brandon-retratos-768594541-36241939.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+article#cat-crianca{
+    background: url(../imagens/pexels-olia-danilevich-6349542.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+article#cat-acessorio{
+    background: url(../imagens/pexels-harper-sunday-2986445.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 footer{
@@ -100,7 +136,7 @@ footer{
     font-family: "Roboto Condensed", sans-serif;
     text-align: center;
     padding: 10px;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 
