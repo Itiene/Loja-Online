@@ -1,0 +1,105 @@
+# Programa: Ícone que gera opções
+
+```html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Opções</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #101820;
+        }
+
+        .container{
+            position: relative;
+        }
+
+        .icone{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #00bcd4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            cursor: pointer;
+            transition: 0.3s;
+            user-select: none;
+        }
+
+        .icone:hover{
+            transform: scale(1.1);
+            background-color: #00e5ff;
+        }
+
+        .menu{
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .menu button{
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .menu button:hover{
+            background-color: #00bcd4;
+            color: white;
+        }
+
+        .mostrar{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="icone" id="icone">
+            ☰
+        </div>
+
+        <div class="menu" id="menu">
+            <button onclick="alert('Perfil aberto!')">Perfil</button>
+            <button onclick="alert('Configurações abertas!')">Configurações</button>
+            <button onclick="alert('Mensagens abertas!')">Mensagens</button>
+            <button onclick="alert('Sessão encerrada!')">Sair</button>
+        </div>
+    </div>
+
+    <script>
+        const icone = document.getElementById('icone');
+        const menu = document.getElementById('menu');
+
+        icone.addEventListener('click', () => {
+            menu.classList.toggle('mostrar');
+        });
+    </script>
+
+</body>
+</html>
