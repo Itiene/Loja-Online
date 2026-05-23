@@ -53,6 +53,7 @@ li i{
 button i{
     color: #1e1e1e;
     cursor: pointer;
+    font-weight: lighter;
 }
 
 nav#cabecalho a{
@@ -96,6 +97,19 @@ article#descricao{
     width:90%;
     max-width: 600px;
     padding: 10px;
+}
+
+div#setas{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin: 20px;
+}
+
+div#setas i{
+    color: #1e1e1e;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 section#categorias{

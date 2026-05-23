@@ -6,7 +6,7 @@
 }
 
 body{
-   background: linear-gradient(45deg,#607ec5,#cddbf7); 
+   background: rgb(243, 240, 240); 
 }
 
 
@@ -28,9 +28,9 @@ div#menu-login{
     flex-direction: row;
     align-items: space-evenly;
     justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.2);;
-    border-radius: 10px 10px 0px 0px;
-    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: fit-content;
+    height: 100%;
     width: 100%;
 }
 
