@@ -19,8 +19,11 @@ main{
 
 section{
     width: 90%;
-    max-width: 400px;
-    border-radius: 10px;    
+    max-width: 400px;   
+}
+#container{
+    margin: auto;
+    border: none;
 }
 
 div#menu-login{
@@ -28,7 +31,6 @@ div#menu-login{
     flex-direction: row;
     align-items: space-between;
     justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.9);
     height: 100%;
     width: 100%;
 }
@@ -50,10 +52,15 @@ div#menu-login p{
     text-align: center;
 }
 
-.color{
-    border-bottom: 2px solid #333;
+.entrar{
+    font-weight: bold;
+    border-bottom: 1px solid black;
 }
 
+.cadastro{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
 
 div#cadastro{
     display: grid;
@@ -81,7 +88,8 @@ div#cadastro form>label{
 div#cadastro form>input{
     border-radius: 10px;
     padding: 5px;
-
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(7, 7, 7, 0.45);
 }
 
 div#cadastro form>button{
@@ -91,8 +99,10 @@ div#cadastro form>button{
     color: white;
     padding: 8px;
     width: 100px;
+    margin: 10px 0px;
     align-self: center;
     transition: 0.3s;
+    box-shadow: 0px 0px 5px rgba(7, 7, 7, 0.45);
 }
 
 div#cadastro form > button:hover{
@@ -108,6 +118,7 @@ div#verificacao form p{
     flex-direction: row;
     justify-content: space-between;
     align-content: stretch;
+    margin: 10px 0px;
 }
 
 div#entrar{
@@ -129,6 +140,8 @@ div#entrar form{
 div#entrar form>input{
     border-radius: 10px;
     padding: 5px;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(7, 7, 7, 0.45);
 }
 
 div#entrar form>button{
@@ -140,8 +153,11 @@ div#entrar form>button{
     width: 100px;
     align-self: center;
     transition: 0.3s;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(7, 7, 7, 0.45);
 }
 
 div#entrar form a{
     text-decoration: none;
+    margin: 10px 0px;
 }

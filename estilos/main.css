@@ -44,7 +44,7 @@ nav#cabecalho ul{
 }
 
 li i{
-    color: #e1e1e1;
+    color: #1f1f1f;
     font-size: 1.2rem;
     border: none;
     background-color: white;
@@ -122,7 +122,7 @@ section#categorias{
 
 section#categorias article{
     border-radius: 10px;
-    padding: 80px 200px 80px 200px;
+    padding: 180px 160px 180px 160px;
     cursor: pointer;
     
     transition: transform 1s ease,box-shadow 0.3s;
@@ -158,6 +158,39 @@ article#cat-crianca{
 }
 
 article#cat-acessorio{
+    background: url(../imagens/pexels-harper-sunday-2986445.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#trending-tops{
+    margin:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+}
+
+#trending-tops article{
+    padding: 180px 160px 180px 160px;
+    cursor: pointer;
+    
+    transition: transform 1s ease,box-shadow 0.3s;
+}
+
+.top1{
+    background: url(../imagens/pexels-brandon-retratos-768594541-36241939.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top2{
+    background: url(../imagens/pexels-olia-danilevich-6349542.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top3{
     background: url(../imagens/pexels-harper-sunday-2986445.jpg) no-repeat;
     background-size: cover;
     background-position: center;

@@ -9,22 +9,23 @@
 <body>
     <main>
         <section>
-             <div id="menu-login" class="menu-login">
-                <a href="entrar.html" class="entrar"><p>Entrar</p></a>
-                <a href="cadastro.html" class="cadastro"><p>Cadastro</p></a>
-            </div>
+             
             <div id="container">
+                <div id="menu-login" class="menu-login">
+                    <a href="entrar.html"><p>Entrar</p></a>
+                    <a href="cadastro.html" class="cadastro"><p>Cadastro</p></a>
+                </div>
                 <div id="cadastro">
                     <h1>Criar Conta</h1>
                     <form action="">
                         <label>Nome:</label>
-                        <input type="text" id="nome" class="cadastro" placeholder="Insira seu nome" required>
+                        <input type="text" id="nome" class="fnome" placeholder="Insira seu nome" required>
                         <label>Email:</label>
-                        <input type="email" id="email" class="cadastro" placeholder="exemplo@gmail.com" required>
+                        <input type="email" id="email" class="femail" placeholder="exemplo@gmail.com" required>
                         <label>Palavra-passe:</label>
-                        <input type="password" id="password" class="cadastro" maxlength="10" required>
+                        <input type="password" id="password" class="fpassword" maxlength="10" required>
                         <label>Confirmar Palavra-passe:</label>
-                        <input type="password" id="password" class="cadastro" required>
+                        <input type="password" id="confirm_password" class="fpassword" required>
                         <p>
                             <input type="checkbox" id="checkbox">Aceito os termos e condições
                         </p>
