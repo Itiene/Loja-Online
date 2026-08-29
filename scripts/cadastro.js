@@ -1,4 +1,4 @@
-const cadastro=document.querySelector("cadastro")
+const cadastro=document.querySelector("#cadastro")
 const fuser=[...document.querySelector("fuser")]
 const password=[...document.querySelector("password")]
 const confirm_password=[...document.querySelector("confirm_password")]
