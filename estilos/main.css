@@ -13,20 +13,20 @@ body{
 header{
     background-color: rgb(255, 255, 255);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 10px;
+    padding: 8px;
 
     position: sticky;
-    top: 0;
-    z-index: 10;
+    /*top: 0;
+    z-index: 10;*/
 }
 
 
 #icone-menu i{
     color: #1e1e1e;
     background-color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: none;
     cursor: pointer;
 }
@@ -115,26 +115,46 @@ div#setas i{
 section#categorias{
     margin:10px;
     display: flex;
-    flex-direction: row;
-    align-items: space-evenly;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 section#categorias article{
-    border-radius: 10px;
-    padding: 180px 160px 180px 160px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border-radius: 11px;
+    padding: 0;
     cursor: pointer;
-    
-    transition: transform 1s ease,box-shadow 0.3s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+section#categorias article::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    transition: background 0.3s ease;
+}
+
+section#categorias article:hover::before{
+    background: rgba(0,0,0,0.6);
+}
 
 section#categorias article:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
-    
-}  
+    transform: translateY(-5px);
+}
 
+section#categorias article p{
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-weight: bold;
+}
 
 article#cat-homem{
     background: url(../imagens/pexels-alexandro-david-871783-1808492.jpg) no-repeat;
@@ -166,12 +186,37 @@ article#cat-acessorio{
     background-position: center;
 }
 
+section#trending{
+    margin: 10px;
+    border: solid black;
+}
+
+#slider{
+    margin: 10px;
+    border: solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+button.setas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38vh;
+    width: 33px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+
 #trending-tops{
     margin:10px;
     display: flex;
     flex-direction: row;
-    align-items: space-evenly;
-    justify-content: space-evenly;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 #trending-tops article{
@@ -181,6 +226,24 @@ article#cat-acessorio{
     transition: transform 1s ease,box-shadow 0.3s;
 }
 
+#pontos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pontos span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 5px;
+    cursor: pointer;
+}
+
+span#ponto1{
+    background-color: darkblue;
+}
 .top1{
     background: url(../imagens/pexels-brandon-retratos-768594541-36241939.jpg) no-repeat;
     background-size: cover;
