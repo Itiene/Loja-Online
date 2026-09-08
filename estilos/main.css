@@ -196,7 +196,7 @@ section#trending{
     border: solid black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
 }
 
@@ -216,6 +216,7 @@ button.setas{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    align-items: baseline;
     justify-content: space-between;
 }
 
@@ -244,6 +245,7 @@ button.setas{
 span#ponto1{
     background-color: darkblue;
 }
+
 .top1{
     background: url(../imagens/pexels-brandon-retratos-768594541-36241939.jpg) no-repeat;
     background-size: cover;
@@ -261,6 +263,7 @@ span#ponto1{
     background-size: cover;
     background-position: center;
 }
+
 
 footer{
     background-color: #1e1e1e;
