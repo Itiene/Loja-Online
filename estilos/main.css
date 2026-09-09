@@ -34,7 +34,6 @@ header{
 nav#cabecalho{
     display: flex;
     align-items: center;
-
 }
 
 nav#cabecalho ul{
@@ -188,15 +187,14 @@ article#cat-acessorio{
 
 section#trending{
     margin: 10px;
-    border: solid black;
+    border: 1px solid black;
 }
 
 #slider{
     margin: 10px;
-    border: solid black;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -204,20 +202,20 @@ button.setas{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 38vh;
+    height: 380px;
     width: 33px;
     background-color: gray;
+    border: none;
     cursor: pointer;
 }
 
 
 #trending-tops{
-    margin:10px;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #trending-tops article{
@@ -231,9 +229,9 @@ button.setas{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
-#pontos span{
-    display: inline-block;
+.ponto{
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -242,26 +240,36 @@ button.setas{
     cursor: pointer;
 }
 
-span#ponto1{
+
+.ponto.ativo{
     background-color: darkblue;
 }
 
-.top1{
-    background: url(../imagens/pexels-brandon-retratos-768594541-36241939.jpg) no-repeat;
+.top-card{
+    width: 320px;
+    height: 360px;
+    cursor: pointer;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.top1{
+    background: url(../imagens/pexels-brandon-retratos-768594541-36241939.jpg);
 }
 
 .top2{
-    background: url(../imagens/pexels-olia-danilevich-6349542.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url(../imagens/pexels-olia-danilevich-6349542.jpg);
 }
 
 .top3{
-    background: url(../imagens/pexels-harper-sunday-2986445.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url(../imagens/pexels-harper-sunday-2986445.jpg);
 }
 
 
